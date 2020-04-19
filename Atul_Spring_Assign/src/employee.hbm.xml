@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"[]>
+<hibernate-mapping default-cascade="none" default-access="property" default-lazy="true" auto-import="true">
+  <class name="com.atulspring.Employee2" table="employee2" mutable="true" polymorphism="implicit" dynamic-update="false" dynamic-insert="false" select-before-update="false" optimistic-lock="version">
+    <id name="id">
+      <generator class="assigned"></generator>
+    </id>
+    <property name="name" unique="false" optimistic-lock="true" lazy="false" generated="never"></property>
+    <property name="basic" unique="false" optimistic-lock="true" lazy="false" generated="never"></property>
+    <property name="hra" unique="false" optimistic-lock="true" lazy="false" generated="never"></property>
+    <property name="da" unique="false" optimistic-lock="true" lazy="false" generated="never"></property>
+    <property name="deductions" unique="false" optimistic-lock="true" lazy="false" generated="never"></property>
+  </class>
+</hibernate-mapping>
